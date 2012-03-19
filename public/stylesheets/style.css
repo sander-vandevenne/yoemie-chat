@@ -1,0 +1,227 @@
+
+/* ------------------ Reset Styles ------------------ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+
+/* ---------- Overall Specifications ---------- */
+
+body {
+  	line-height: 1.5;
+  	font-size: 87.5%;
+  	word-wrap: break-word;
+  	margin: 0;
+  	padding: 0;
+  	border: 0;
+  	outline: 0;
+}
+a:link,
+a:visited {
+  	text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+  	text-decoration: underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  	margin: 1.0em 0 0.5em;
+  	font-weight: inherit;
+}
+h1 {
+  	font-size: 1.3em;
+  	color: #000;
+}
+h2 {
+  	font-size: 1.143em;
+}
+p {
+  	margin: 0 0 1.2em;
+}
+del {
+  	text-decoration: line-through;
+}
+tr.odd {
+  	background-color: #dddddd;
+}
+img {
+  	outline: 0;
+}
+code,
+pre,
+kbd,
+samp,
+var {
+  	padding: 0 0.4em;
+  	font-size: 0.77em;
+  	font-family: Menlo, Consolas, "Andale Mono", "Lucida Console", "Nimbus Mono L", "DejaVu Sans Mono", monospace, "Courier New";
+}
+code {
+  	background-color: #f2f2f2;
+  	background-color: rgba(40, 40, 0, 0.06);
+}
+pre code,
+pre kbd,
+pre samp,
+pre var,
+kbd kbd,
+kbd samp,
+code var {
+  	font-size: 100%;
+  	background-color: transparent;
+}
+pre code,
+pre samp,
+pre var {
+  	padding: 0;
+}
+.description code {
+  	font-size: 1em;
+}
+kbd {
+  	background-color: #f2f2f2;
+  	border: 1px outset #575757;
+  	margin: 0 3px;
+  	color: #666;
+  	display: inline-block;
+  	padding: 0 6px;
+  	-khtml-border-radius: 5px;
+  	-moz-border-radius: 5px;
+  	-webkit-border-radius: 5px;
+  	border-radius: 5px;
+}
+pre {
+  	background-color: #f2f2f2;
+  	background-color: rgba(40, 40, 0, 0.06);
+  	margin: 10px 0;
+  	overflow: hidden;
+  	padding: 15px;
+  	white-space: pre-wrap;
+}
+
+/* ----------- Sections specific styles ----------- */
+
+#header h1{
+  	margin:0;
+	font-weight:normal;
+}
+
+
+/* ----------- Markup free clearing ----------- */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* IE6 */
+* html .clearfix {
+  height: 1%;
+}
+/* IE7 */
+*:first-child + html .clearfix {
+  min-height: 1%;
+}
+
+/* ------------------ Fonts ------------------ */
+
+body {
+  	font-family: Arial,Helvetica,Garuda,sans-serif;
+	font-size:13px;
+}
+
+#chats li .ui-icon-close { float: left; margin: 0.4em 0.2em 0 0; cursor: pointer; }
+.chat-messages {
+	background-color:white;
+}
+.chat-line {
+		
+}
+
+/* Vertical Tabs
+----------------------------------*/
+.ui-tabs-vertical {}
+.ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 200px; }
+.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+.ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-selected { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+.ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; position:absolute; left:200px; right:0; top:0; bottom:0;}

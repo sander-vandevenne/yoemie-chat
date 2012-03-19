@@ -1,0 +1,41 @@
+div#page
+	
+	div#chats-wrapper
+		
+		
+		ul#chats
+			each connection, connection_profile_id in connections 	
+				if connection_profile_id == profile_id
+					li.active
+						if connection.image == ""
+							img(src= 'http://webserver/YOEMIE/html/img/profile/empty/35/'+connection.gender+'.gif')
+						else
+							img(src= 'http://webserver/YOEMIE/html/img/profile/' + connection_profile_id + '/35/'+connection.image)
+						a(href='#chat-'+connection_profile_id)= connection.name
+						span.ui-icon.ui-icon-close Remove Tab
+				else
+					li
+						a(href='#chat-'+connection_profile_id)= connection.name
+						span.ui-icon.ui-icon-close Remove Tab
+		
+		each connection, connection_profile_id in connections		
+			div(id='chat-'+connection_profile_id)
+			
+				div.chat-wrapper
+					div.chat-header
+						div.profile-data
+							if connection.image == ""
+								img(src= 'http://webserver/YOEMIE/html/img/profile/empty/80/'+connection.gender+'.gif')
+							else
+								img(src= 'http://webserver/YOEMIE/html/img/profile/' + connection_profile_id + '/80/'+connection.image)
+							
+							h1= connection.name 
+				
+					div.chat-messages-wrapper
+						div.chat-messages
+					
+						div.input-message
+							form(method='post')
+								textarea.input-message-textarea
+								div#send verzend
+		
